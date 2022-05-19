@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import useSelectMonedas from '../hooks/useSelectMonedas'
 
 
 const InputSubmit = styled.input`
@@ -22,7 +23,11 @@ const InputSubmit = styled.input`
     }
     ` 
 
-const formulario = () => {
+const Formulario = () => {
+
+    const [ SelectMonedas ] = useSelectMonedas()
+    SelectMonedas()
+
   return (
     <form>
         <InputSubmit 
@@ -32,4 +37,4 @@ const formulario = () => {
   )
 }
 
-export default formulario
+export default Formulario
