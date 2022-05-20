@@ -31,7 +31,7 @@ const useSelectMonedas = (label, opciones) => {
             <Label htmlFor="">
                 {label}
             </Label>
-            <Select name="" id=""
+            <Select
                 value={state}
                 onChange={ e => setState(e.target.value) }
             >
